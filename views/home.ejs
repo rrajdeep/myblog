@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="constainer">
+        <nav class="navbar navbar-default">
+            <div class="container">
+              <div class="navbar-header">
+                <p class="navbar-brand">MY BLOG</p>
+              </div>
+                <ul class="nav navbar-nav navbar-right">
+                  <li id="home"><a href="/">Home</a></li>
+                  <li id="blogs"><a href="/blogs">Blogs</a></li>
+                  <!-- <li id="contact"><a href="/contact">CONTACT US</a></li> -->
+                </ul>
+            </div>
+          </nav>
+    </div>
+    <br>
+    <div class="container">
+        <h4>Create a blog...</h4>
+        <form action="/blogs" method="post">
+            <label for="title">Title</label><br>
+            <input type="text" name="title" placeholder="blog title" required><br>
+            <label for="content">Content</label><br>
+            <textarea rows="5" cols="30" name="content"></textarea><br>
+            <input type="submit">
+        </form>
+    </div>
+</body>
+</html>

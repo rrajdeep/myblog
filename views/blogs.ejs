@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My blogs</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="constainer">
+        <nav class="navbar navbar-default">
+            <div class="container">
+              <div class="navbar-header">
+                <p class="navbar-brand">MY BLOG</p>
+              </div>
+                <ul class="nav navbar-nav navbar-right">
+                  <li id="home"><a href="/">Home</a></li>
+                  <li id="about"><a href="/blogs">Blogs</a></li>
+                  <!-- <li id="contact"><a href="/contact">CONTACT US</a></li> -->
+                </ul>
+            </div>
+          </nav>
+    </div>
+    <!-- <h1>
+        This is blogs page
+    </h1> -->
+    <!-- <div>
+        <a href="/">home</a>
+    </div> -->
+    <div class="container">
+        <% blogs.forEach(function(blog) { %>
+            <h3><%= blog.title %></h3>
+            <p><%= blog.content%></p>
+            <p><%= blog.created%></p>
+            <a href="/delete?blogID=<%=blog.blogID%>">delete</a>
+        <% }) %>
+    </div>
+</body>
+</html>
