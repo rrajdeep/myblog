@@ -13,7 +13,7 @@ app.use(express.static("public"));
 const connection = mysql.createConnection({
     host: "127.0.0.1",
     user: "root",
-    password: "rD0082#9452@",
+    password: "",
     database: "myblogdb"
 });
 
